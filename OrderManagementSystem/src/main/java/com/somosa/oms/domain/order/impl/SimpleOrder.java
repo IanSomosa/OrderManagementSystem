@@ -1,22 +1,21 @@
 package com.somosa.oms.domain.order.impl;
 
 import com.somosa.oms.domain.order.Order;
-import com.somosa.oms.domain.order.OrderID;
 import java.math.BigDecimal;
 
 public class SimpleOrder implements Order {
 
-  private OrderID orderID;
+  private Long id;
   private String description;
   private BigDecimal cost;
   private boolean isComplete;
 
-  public OrderID getOrderID() {
-    return orderID;
+  public Long getId() {
+    return id;
   }
 
-  public void setOrderID(OrderID orderID) {
-    this.orderID = orderID;
+  public void setId(Long id) {
+    this.id = id;
   }
 
   public String getDescription() {

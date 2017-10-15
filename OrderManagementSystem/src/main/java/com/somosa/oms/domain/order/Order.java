@@ -1,8 +1,8 @@
 package com.somosa.oms.domain.order;
 
-public interface Order {
+import com.somosa.oms.domain.Identifiable;
 
-  OrderID getOrderID();
+public interface Order extends Identifiable {
 
   void markComplete();
 
